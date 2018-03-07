@@ -6,10 +6,9 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Arrays;
 public class CityNamesMap {
     public static void main(String args[]){
-        String fileName = "Cities.txt";
+        String fileName = "/home/sb-sandeep/IdeaProjects/Java-Training/Software/src/com/javatraining/Collections/Cities.txt";
         String line = null;
         String city[] = new String[40];
         ArrayList<String> states = new ArrayList<String>();
