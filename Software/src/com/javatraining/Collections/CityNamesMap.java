@@ -35,7 +35,7 @@ public class CityNamesMap {
             System.out.println("Unable to open file");
         } catch (IOException e) {
             //e.printStackTrace();
-            System.out.println("Ubale to read the file");
+            System.out.println("Unable to read the file");
         }
     }
 }
