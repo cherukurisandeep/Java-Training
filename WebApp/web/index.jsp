@@ -18,10 +18,10 @@
       <h3>First Servlet Page</h3>
   <form action="hello">
     <input type="text" id = 'name' name="name" placeholder="name">
-      <input type="submit" value="Clickme">
+      <input class="btn btn-primary" type="submit" value="Clickme">
   </form>
-  <h3>Want to see your Full Name</h3>
-  <button onclick="window.location.href='/details.html'">Click Here to Fill Personal Details</button>
+  <h3>--Registration--</h3>
+  <button class="btn btn-primary" onclick="window.location.href='/details.html'">Click Here to Fill Personal Details</button>
     </div>
     <div class="col"></div>
   </div>

@@ -12,11 +12,11 @@
             <url-pattern>/hello</url-pattern>
         </servlet-mapping>
         <servlet>
-            <servlet-name>FullName</servlet-name>
-            <servlet-class>com.javatraining.FullName</servlet-class>
+            <servlet-name>DetailsList</servlet-name>
+            <servlet-class>com.javatraining.DetailsList</servlet-class>
         </servlet>
         <servlet-mapping>
-            <servlet-name>FullName</servlet-name>
-            <url-pattern>/fullname</url-pattern>
+            <servlet-name>DetailsList</servlet-name>
+            <url-pattern>/fullDetails</url-pattern>
         </servlet-mapping>
 </web-app>
