@@ -78,12 +78,13 @@ public class DetailsList extends HttpServlet {
             out.println("<h3><strong>No DATA Entered</strong></h3>");
         }
         else{
-            out.println("  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n" +
+            response.sendRedirect("listView.jsp");
+            /*out.println("  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n" +
                     "  <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css\">\n" +
                     "  <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js\"></script>\n" +
                     "  <script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js\"></script>\n" +
                     "  <script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js\"></script>");
-            out.println("<h1 class=\"text-center\">Personal Details</h1><div class=\"row\"><div class=\"col-md-4\"></div><div class=\"col-md-4\"><table class=\"table\"> <thead><tr><th>Name</th><th>Age</th><th>Mobile</th></tr><tr><td>"+name+"</td><td>"+age+"</td><td>"+mobile+"</td></tr></div><div class=\"col-md-4\"></div></div>");
+            out.println("<h1 class=\"text-center\">Personal Details</h1><div class=\"row\"><div class=\"col-md-4\"></div><div class=\"col-md-4\"><table class=\"table\"> <thead><tr><th>Name</th><th>Age</th><th>Mobile</th></tr><tr><td>"+name+"</td><td>"+age+"</td><td>"+mobile+"</td></tr></div><div class=\"col-md-4\"></div></div>");*/
         }
     }
 
