@@ -17,7 +17,7 @@ public class LogFilter implements Filter {
         HttpServletRequest request = (HttpServletRequest) req;
         HttpServletResponse response = (HttpServletResponse) resp;
         PrintWriter out = response.getWriter();
-        HttpSession session = request.getSession(false);
+        HttpSession session = request.getSession(true);
         if(session !=null && session.getAttribute("username")!=null){
             chain.doFilter(request,response);
             return;

@@ -30,6 +30,14 @@
         <servlet-name>LoginServlet</servlet-name>
         <url-pattern>/login</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>Logout</servlet-name>
+        <servlet-class>com.javatraining.Logout</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Logout</servlet-name>
+        <url-pattern>/logout</url-pattern>
+    </servlet-mapping>
     <filter>
         <filter-name>LogFilter</filter-name>
         <filter-class>com.javatraining.LogFilter</filter-class>
@@ -39,5 +47,7 @@
         <url-pattern>/add_details.jsp</url-pattern>
         <url-pattern>/listView.jsp</url-pattern>
         <url-pattern>/index.jsp</url-pattern>
+        <url-pattern>/header.jsp</url-pattern>
+        <url-pattern>/fullDetails</url-pattern>
     </filter-mapping>
 </web-app>

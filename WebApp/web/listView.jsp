@@ -68,6 +68,7 @@
             <div class="col">
                 <%--<a href="./add_details.jsp"><strong>Add New Data</strong>--%>
                 <button class="btn btn-info" style="margin-left: 350px" onclick="location.href = 'add_details.jsp';">Add New Contact</button>
+                <br>
             </div>
         </div>
         <table class="table">
@@ -76,6 +77,7 @@
                 <th>Age</th>
                 <th>Email</th>
                 <th>Mobile</th>
+                <th>Action</th>
             </tr></thead>
             <%
                 for(iterate = detailsList.iterator(); iterate.hasNext();){
@@ -86,6 +88,7 @@
                 <td><%= iterate.next()%></td>
                 <td><%= iterate.next()%></td>
                 <td><%= iterate.next()%></td>
+                <td><button class="btn btn-primary">Edit</button></td>
             </tr>
             <%
                 }

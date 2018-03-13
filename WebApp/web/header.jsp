@@ -18,9 +18,12 @@
         <div class="navbar-header">
             <a class="navbar-brand" href="index.jsp"> <i class=" large mdi mdi-account-plus"></i>Training Project</a>
         </div>
+        <form action="/logout" method="post">
         <div class="navbar-header" style="align-items: center">
-            <a class="navbar-brand" href="index.jsp"> <i class=" large mdi mdi-account-plus"></i>Logout</a>
+            <input type="submit" class="btn btn-danger" value="LogOut"/>
+            <%--<a class="navbar-brand" href="index.jsp"> <i class=" large mdi mdi-account-plus"></i>Logout</a>--%>
         </div>
+        </form>
     </div>
 </nav>
 
