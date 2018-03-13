@@ -88,7 +88,7 @@
                 <td><%= iterate.next()%></td>
             </tr>
             <%
-            }
+                }
             %>
         </table>
     </div>
