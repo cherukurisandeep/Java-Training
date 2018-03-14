@@ -33,7 +33,7 @@
     Add New Contact</button>
         </div>
         <div class="col">
-      <button class="btn btn-primary text-center" onclick="window.location.href='/listView.jsp'">
+      <button class="btn btn-primary text-center" onclick="window.location.href='/contactsList.jsp'">
         <i class="large material-icons align-center">people</i>
         View Contacts</button>
         </div>

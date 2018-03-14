@@ -25,9 +25,6 @@ public class DetailsList extends HttpServlet {
         String mobile = request.getParameter("lname");
         PrintWriter out = response.getWriter();
         Connection connection = null;
-
-
-
         System.out.println("-------- PostgreSQL "
                 + "JDBC Connection Testing ------------");
 
@@ -78,7 +75,7 @@ public class DetailsList extends HttpServlet {
             out.println("<h3><strong>No DATA Entered</strong></h3>");
         }
         else{
-            response.sendRedirect("listView.jsp");
+            response.sendRedirect("contactsList.jsp");
             /*out.println("  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n" +
                     "  <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css\">\n" +
                     "  <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js\"></script>\n" +
