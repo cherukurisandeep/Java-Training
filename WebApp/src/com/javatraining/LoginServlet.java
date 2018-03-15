@@ -12,11 +12,11 @@ import java.io.PrintWriter;
 
 @WebServlet(name = "LoginServlet")
 public class LoginServlet extends HttpServlet {
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("Text/html");
         PrintWriter out = response.getWriter();
         System.out.println("POSTMethod");
-        String userName = request.getParameter("userName");
+            String userName = request.getParameter("userName");
         String password = request.getParameter("userPassword");
         System.out.println(userName+"==>"+password);
         if(userName.equals("sandeep") && password.equals("123")) {
@@ -35,7 +35,7 @@ public class LoginServlet extends HttpServlet {
             }
     }
 
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
     }
 }

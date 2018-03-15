@@ -24,12 +24,12 @@
             </br>
             <div class="row">
                 <label class="col-2">Age</label>
-                <input class="col form-control" type="number" name="mname" id="mname" placeholder="Age">
+                <input class="col form-control" type="number" name="age" id="age" placeholder="Age">
             </div>
             </br>
             <div class="row">
                 <label class="col-2">Mobile</label>
-                <input class="col form-control" type="number" name="lname" id="lname" placeholder="Mobile">
+                <input class="col form-control" type="number" name="mobile" id="mobile" placeholder="Mobile">
             </div>
             </br>
             </br>

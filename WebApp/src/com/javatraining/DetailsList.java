@@ -14,15 +14,15 @@ import java.sql.SQLException;
 
 @WebServlet(name = "DetailsList")
 public class DetailsList extends HttpServlet {
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("Text/html");
         String fname = request.getParameter("fname");
-        fname = fname +""+request.getParameter("mname");
-        fname = fname +""+request.getParameter("lname");
+        fname = fname +""+request.getParameter("age");
+        fname = fname +""+request.getParameter("mobile");
         String name = request.getParameter("fname");
-        int age = Integer.parseInt(request.getParameter("mname"));
+        int age = Integer.parseInt(request.getParameter("age"));
         String email = request.getParameter("email");
-        String mobile = request.getParameter("lname");
+        String mobile = request.getParameter("mobile");
         PrintWriter out = response.getWriter();
         Connection connection = null;
         System.out.println("-------- PostgreSQL "
@@ -85,7 +85,6 @@ public class DetailsList extends HttpServlet {
         }
     }
 
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+    public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
     }
 }
