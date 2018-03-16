@@ -10,7 +10,7 @@ import java.io.IOException;
 
 @WebServlet(name = "Logout")
 public class Logout extends HttpServlet {
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         HttpSession session = request.getSession(false);
         session.invalidate();
         System.out.println("Successfully LogedOut");
@@ -18,7 +18,7 @@ public class Logout extends HttpServlet {
 
     }
 
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
     }
 }

@@ -12,32 +12,34 @@ import javax.sql.DataSource;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 
 import static org.junit.Assert.assertNotNull;
 
 @RunWith(MockitoJUnitRunner.class)
 public class DetailsListTest extends Mockito {
     @Mock
-    private DataSource ds;
+    DataSource mockDataSource;
     @Mock
-    private Connection c;
+    Connection mockConn;
     @Mock
-    private PreparedStatement stmt;
+    PreparedStatement mockPreparedStmnt;
     @Mock
-    private ResultSet rs;
+    ResultSet mockResultSet;
     @Mock
     HttpServletRequest request = Mockito.mock(HttpServletRequest.class);
     HttpServletResponse response = Mockito.mock(HttpServletResponse.class);
     @Before
-    public void setUp() throws AssertionError,Exception{
-        assertNotNull(ds);
-        when(c.prepareStatement(any(String.class))).thenReturn(stmt);
-        when(ds.getConnection()).thenReturn(c);
-        when(request.getParameter("fname")).thenReturn("shiva");
-        when(request.getParameter("email")).thenReturn("Shiva123@gmail.com");
+    public void setUp() throws AssertionError,SQLException {
+        assertNotNull(mockDataSource);
+        when(mockDataSource.getConnection(anyString(), anyString())).thenReturn(mockConn);
+        doNothing().when(mockConn).commit();
+        when(request.getParameter("fname")).thenReturn("thaman");
+        when(request.getParameter("email")).thenReturn("thaman@gmail.com");
         when(request.getParameter("age")).thenReturn("26");
-        when(request.getParameter("mobile")).thenReturn("9988551144");
-        when(stmt.executeQuery()).thenReturn(rs);
+        when(request.getParameter("mobile")).thenReturn("864483888");
+        when(mockPreparedStmnt.execute()).thenReturn(Boolean.TRUE);
+        when(mockResultSet.next()).thenReturn(Boolean.TRUE, Boolean.FALSE);
     }
 
     @Test

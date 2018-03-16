@@ -19,7 +19,7 @@
             </br>
             <div class="row">
                 <label class="col-2">Email</label>
-                <input class="col form-control" type="email" name="email" id="email" placeholder="Name">
+                <input class="col form-control" type="email" name="email" id="email" placeholder="Email">
             </div>
             </br>
             <div class="row">

@@ -19,6 +19,22 @@
         location.href='contactEdit.jsp?cId='+email;
     }
 </script>
+<style>
+    .side{
+        position:fixed;
+        top:0;
+        left:0;
+        padding:0;
+    }
+
+    .scroll-area{
+        width:100%;
+        height:calc(100% - 200px);
+        margin-top:100px;
+        float:left;
+        overflow-y:scroll;
+    }
+</style>
 <body>
 <%@include file="header.jsp" %>
 <h1 class="text-center">Contacts List View</h1>
@@ -37,6 +53,7 @@ user="test" password="test" />
             </div>
             </br>
         </div>
+        <div class="scroll-area">
         <table class="table">
             <thead class="thead-dark"><tr>
                 <td><strong>Name</strong></td>
@@ -56,6 +73,7 @@ user="test" password="test" />
                 </tr>
             </core:forEach>
         </table>
+        </div>
 
     </div>
     <div class="col-3"></div>
