@@ -11,6 +11,13 @@ public class MainClass {
         BeanFactory factory=new XmlBeanFactory(r);
 
         Vehicles veh = (Vehicles)factory.getBean("veh");
+        veh.getBikes();
+        veh.getCars();
+
+        Brands brd = (Brands)factory.getBean("brands");
+        brd.getCars();
+        brd.getBikes();
+        brd.getAutos();
 
 
     }

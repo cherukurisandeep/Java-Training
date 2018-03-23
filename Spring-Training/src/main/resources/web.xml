@@ -27,7 +27,7 @@
     </bean>
 
     <bean id="brands" class="com.sb.bean.inheritance.Brands" parent="veh">
-        <property name="cars" value="Hero"></property>
-        <property name="bikes" value="LandRover"></property>
+        <property name="bikes" value="Hero"></property>
+        <property name="autos" value="Mahendra"></property>
     </bean>
 </beans>

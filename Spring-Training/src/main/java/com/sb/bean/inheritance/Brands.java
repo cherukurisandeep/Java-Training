@@ -4,6 +4,16 @@ public class Brands {
     private String cars;
     private String bikes;
 
+    public void getAutos() {
+        System.out.println(autos);
+    }
+
+    public void setAutos(String autos) {
+        this.autos = autos;
+    }
+
+    private String autos;
+
     public void getCars() {
         System.out.println(cars);
         //return cars;
