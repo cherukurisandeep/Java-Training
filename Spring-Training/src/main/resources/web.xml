@@ -30,4 +30,7 @@
         <property name="bikes" value="Hero"></property>
         <property name="autos" value="Mahendra"></property>
     </bean>
+
+    <bean id="customEvent" class="com.sb.customevents.EventHandler"></bean>
+    <bean id="publishEvent" class="com.sb.customevents.EventPublisher"></bean>
 </beans>
